@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% block title %}
-{{ post.title }}
+{{ title }}
 {% endblock %}
 {% block body %}
 <article id="post">
     <header>
-        <h1>{{ post.title }}</h1>
+        <h1>{{ title }}</h1>
     </header>
     {{ content }}
     <footer>
         <small><em>
-            <address>Posted by {{ post.author }}</address>
-            <time datetime="{{ post.date }}">{{ post.date | datetimeformat('%b %d, %Y') }}</time>
+            <address>Posted by {{ author }}</address>
+            <time datetime="{{ date }}">{{ date | datetimeformat('%b %d, %Y') }}</time>
         </em></small>
     </footer>
 </article>

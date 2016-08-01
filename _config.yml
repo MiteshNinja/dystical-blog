@@ -1,3 +1,5 @@
 site:
     title: Mitesh Shah
+    baseurl: ''
+author: Mitesh Shah
 layout: post
